@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import MainContainer from './components/MainContainer';
 import WatchPage from './components/WatchPage';
 import Memo from './components/Memo';
+import Demo2 from './components/Demo2';
 
 const appRouter = createBrowserRouter([
   {
@@ -24,7 +25,10 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/memo",
-        element : <Memo/>,
+        element : <>
+              <Memo/>
+              <Demo2/>
+        </>,
       }
     ],
   },
